@@ -1,0 +1,27 @@
+*{
+    color: blueviolet;
+    font-family: 'CelloSansRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+}
+
+.left{
+    background-image:url(periwinkle.jpg);
+    background-image:url(OR-coast.jpg);
+
+    width: 35%;
+}
+
+.right{
+    flex-direction: column;
+}
+
+.right-top,
+.form-bottom{
+    background-color: azure;
+    height: 33%;
+}
