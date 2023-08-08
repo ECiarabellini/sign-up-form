@@ -6,55 +6,69 @@
     <title>Sign-up page</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cello-sans" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-<!-- Photo by <a href="https://unsplash.com/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene Golovesov</a> on <a href="https://unsplash.com/photos/sO9bzmSfzMU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-    <div class="left">
-        <img src="nasturtium.svg"> Periwinkle  
-    </div>
+    <div class="sign-up">
 
-    <div class="right">
-        <div class="right-top">
-            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
-            Sign up <em>now</em> to get started.
-
-            You <em>know</em> you want to.
+        <div class="left">
+            <div class="left-mid">
+                <span class="material-symbols-outlined" id="icon">
+                    emoji_nature
+                </span>
+                <div id="logo-text">Periwinkle</div>  
+            </div>
+            <div class="left-footer">
+                Photo by <a href="https://unsplash.com/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene Golovesov</a> on <a href="https://unsplash.com/photos/sO9bzmSfzMU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+            
         </div>
-        <div class="right-mid">
-            <form action="tbd" method="post">
-                <div class="form-mid">
-                    <div class="form-mid-left">
-                        <label for="first_name">FIRST NAME
-                            <input type="text" ID="first_name" name="first_name">
-                        </label>
-                        <label for="email">EMAIL
-                            <input type="email" ID="email" name="email">
-                        </label>
-                        <label for="password">PASSWORD
-                            <input type="password" ID="password" name="password" class="error">
-                        </label>
+    
+        <div class="right">
+            <div class="right-top headline">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
+                Sign up <em>now</em> to get started.
+                <br>
+                <br>
+                You <em>know</em> you want to.
+            </div>
+            <div class="right-mid">
+                <form action="tbd" method="post">
+                    <div class="headline">Let's do this!</div>
+                    <div class="form-mid">
+                        <div class="form-mid-left">
+                            <label for="first_name">FIRST NAME
+                                <input type="text" ID="first_name" name="first_name">
+                            </label>
+                            <label for="email">EMAIL
+                                <input type="email" ID="email" name="email">
+                            </label>
+                            <label for="password">PASSWORD
+                                <input type="password" ID="password" name="password" class="error">
+                            </label>
+                        </div>
+                        <div class="form-mid-right">
+                            <label for="last_name">LAST NAME
+                                <input type="text" ID="last_name" name="last_name">
+                            </label>
+                            <label for="phone_number">PHONE NUMBER
+                                <input type="tel" ID="phone_number" name="phone_number">
+                            </label>
+                            <label for="confirm_password">CONFIRM PASSWORD
+                                <input type="password" ID="confirm_password" name="confirm_password" class="error">
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-mid-right">
-                        <label for="last_name">LAST NAME
-                            <input type="text" ID="last_name" name="last_name">
-                        </label>
-                        <label for="phone_number">PHONE NUMBER
-                            <input type="tel" ID="phone_number" name="phone_number">
-                        </label>
-                        <label for="confirm_password">CONFIRM PASSWORD
-                            <input type="password" ID="confirm_password" name="confirm_password" class="error">
-                        </label>
+                    <div class="form-bottom">
+                        <button type="submit">Create Account</button>
+                        Already have an account? <a href="https://www.google.com/">Log in</a>
                     </div>
-                </div>
-                <div class="form-bottom">
-                    <button type="submit">Create Account</button>
-                    Already have an account? <a href="https://www.google.com/">Log in</a>
-                </div>
-
-            
-            
-            
-            </form>
+    
+                
+                
+                
+                </form>
+            </div>
         </div>
     </div>
       
