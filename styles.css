@@ -5,7 +5,11 @@
 }
 
 body,
-.sign-up {
+.sign-up-window,
+.left,
+.left-mid,
+.left-mid-text,
+.form-mid {
     display: flex;
     overflow: hidden;
 }
@@ -13,9 +17,11 @@ body,
 body{
     background-color: bisque;
     border-radius: 30px;
+    height: 100%;
+    overflow-y:scroll;
 }
 
-.sign-up {
+.sign-up-window {
     border-radius: 30px;
     /* border: 2px solid salmon; */
     box-shadow: inset 1px 1px 3px #ccc;
@@ -24,6 +30,8 @@ body{
     margin-left: 75px;
     margin-right: 75px;
     background-color: white;
+    width: clamp(800px, 75%vw, 1200px);
+    height: clamp(400px, 75%vw, 95%vw);
 }
 
 .material-symbols-outlined {
@@ -48,9 +56,17 @@ button {
     background-image:url(periwinkle.jpg);
     background-position: center ;
     background-size: cover ;
-    /* background-image:url(OR-coast.jpg); */
     width: 35%;
     height: 100%;
+    display: flex;
+    flex-grow:2;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right{
+    flex-grow:4;
 }
 
 .left-mid{
@@ -58,12 +74,35 @@ button {
     height: 100px;
     opacity: 60%;
     margin-top: 350px;
-    color: whitesmoke;
-    font-size: 75px;
+    color: white;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.left-mid-text,
 #icon{
-    font-size: 75px;
+    color: white;
+    opacity: 100%;
+    padding: 1%;
+    font-size: calc(3vw + 16px);
+    text-align: center;
+    align-self: center;
+
+}
+
+.left-footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    opacity: 60%;
+    align-self: center;
+    font-size: 10px;
+}
+
+.left-footer a{
+    color: lightblue;
 }
 
 .right{
@@ -81,6 +120,7 @@ button {
 .right-mid,
 .form-bottom{
     padding-left: 75px;
+
 }
 
 .headline{
@@ -90,10 +130,33 @@ button {
 
 .right-top{
     padding-top: 200px;
-    padding-right: 200px;
+    padding-right: 75px;
     padding-bottom: 100px;
 }
 
+
 .right-mid{
     box-shadow: inset 1px 1px 3px #ccc;
+    margin-top: 75px;
 }
+
+
+.form-mid-left,
+.form-mid-right{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 200px;
+    align-items: stretch;
+    align-content: space-between;
+    margin-top: 20px;
+}
+.form-mid-left{
+    margin-right: 50px;
+}
+
+label{
+    width: 250px;
+    font-size: 12px;
+}
+
